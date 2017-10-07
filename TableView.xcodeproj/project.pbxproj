@@ -12,6 +12,11 @@
 		39AD3EB01F88CF2C0043F468 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39AD3EAE1F88CF2C0043F468 /* MainMenu.xib */; };
 		39AD3EBC1F88CF2C0043F468 /* TableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AD3EBB1F88CF2C0043F468 /* TableViewTests.swift */; };
 		39AD3EC71F88CF2C0043F468 /* TableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AD3EC61F88CF2C0043F468 /* TableViewUITests.swift */; };
+		39AD3ED51F88CF750043F468 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AD3ED41F88CF750043F468 /* TableViewController.swift */; };
+		39AD3ED71F88CF9A0043F468 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AD3ED61F88CF9A0043F468 /* TableView.swift */; };
+		39AD3EDA1F88CFC50043F468 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AD3ED91F88CFC50043F468 /* BaseView.swift */; };
+		39AD3EDE1F88D1CC0043F468 /* AdapterTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AD3EDD1F88D1CC0043F468 /* AdapterTableView.swift */; };
+		39AD3EE11F88D20D0043F468 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AD3EE01F88D20D0043F468 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		39AD3EC21F88CF2C0043F468 /* TableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39AD3EC61F88CF2C0043F468 /* TableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewUITests.swift; sourceTree = "<group>"; };
 		39AD3EC81F88CF2C0043F468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39AD3ED41F88CF750043F468 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		39AD3ED61F88CF9A0043F468 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		39AD3ED91F88CFC50043F468 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		39AD3EDD1F88D1CC0043F468 /* AdapterTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterTableView.swift; sourceTree = "<group>"; };
+		39AD3EE01F88D20D0043F468 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +105,11 @@
 			isa = PBXGroup;
 			children = (
 				39AD3EAA1F88CF2C0043F468 /* AppDelegate.swift */,
+				39AD3ED81F88CFB50043F468 /* Base */,
+				39AD3EDF1F88D2080043F468 /* ViewModel */,
+				39AD3ED41F88CF750043F468 /* TableViewController.swift */,
+				39AD3ED61F88CF9A0043F468 /* TableView.swift */,
+				39AD3EDC1F88D1B90043F468 /* Adapter */,
 				39AD3EAC1F88CF2C0043F468 /* Assets.xcassets */,
 				39AD3EAE1F88CF2C0043F468 /* MainMenu.xib */,
 				39AD3EB11F88CF2C0043F468 /* Info.plist */,
@@ -119,6 +134,30 @@
 				39AD3EC81F88CF2C0043F468 /* Info.plist */,
 			);
 			path = TableViewUITests;
+			sourceTree = "<group>";
+		};
+		39AD3ED81F88CFB50043F468 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				39AD3ED91F88CFC50043F468 /* BaseView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		39AD3EDC1F88D1B90043F468 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				39AD3EDD1F88D1CC0043F468 /* AdapterTableView.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		39AD3EDF1F88D2080043F468 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				39AD3EE01F88D20D0043F468 /* User.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,7 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39AD3ED51F88CF750043F468 /* TableViewController.swift in Sources */,
+				39AD3ED71F88CF9A0043F468 /* TableView.swift in Sources */,
+				39AD3EE11F88D20D0043F468 /* User.swift in Sources */,
 				39AD3EAB1F88CF2C0043F468 /* AppDelegate.swift in Sources */,
+				39AD3EDA1F88CFC50043F468 /* BaseView.swift in Sources */,
+				39AD3EDE1F88D1CC0043F468 /* AdapterTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
