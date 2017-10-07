@@ -31,7 +31,7 @@ class TableView: BaseView {
     override func addConstraints() {
         scrollViewTableView.translatesAutoresizingMaskIntoConstraints = false
         
-        NSLayoutConstraint.activate([scrollViewTableView.topAnchor.constraint(equalTo: scrollViewTableView.superview!.topAnchor),,
+        NSLayoutConstraint.activate([scrollViewTableView.topAnchor.constraint(equalTo: scrollViewTableView.superview!.topAnchor),
                                      scrollViewTableView.leadingAnchor.constraint(equalTo: scrollViewTableView.superview!.leadingAnchor),
                                      scrollViewTableView.trailingAnchor.constraint(equalTo: scrollViewTableView.superview!.trailingAnchor),
                                      scrollViewTableView.bottomAnchor.constraint(equalTo: scrollViewTableView.superview!.bottomAnchor)
